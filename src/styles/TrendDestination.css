@@ -1,0 +1,65 @@
+:root {
+    --overlay-bg: #194e90;
+    --overlay-gradient: linear-gradient(to top, var(--overlay-bg) 5%, transparent 100%);
+    --button-bg: var(--main-color);
+    --button-text: #fff;
+    --box-shadow-hover: 0 0 5px #ddd;
+}
+
+.destinationCard {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destinationCard .stick {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    position: absolute;
+    inset: 0; /* top: 0, right: 0, bottom: 0, left: 0 */
+    z-index: 1;
+    background: var(--overlay-gradient);
+}
+
+.destinationCard .overlay {
+    position: absolute;
+    inset: 100% 0 0; /* top: 100%, right: 0, bottom: 0 */
+    width: 100%;
+    background-color: var(--overlay-bg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.destinationCard .overlay span {
+    color: var(--main-color);
+}
+
+.destinationCard .overlay button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-block: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.destinationCard .overlay button:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.destinationCard:hover .overlay {
+    top: 0;
+}
+
+.destinationCard:hover .stick {
+    bottom: 100%;
+}

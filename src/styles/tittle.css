@@ -1,0 +1,31 @@
+h2.tittle {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--main-color);
+
+}
+
+h2.tittle::after {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+
+}
+
+h2.tittle::before {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+
+}

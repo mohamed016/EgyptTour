@@ -1,0 +1,127 @@
+.SecondSection {
+    position: relative;
+}
+
+.SecondSection .overlay {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.293);
+}
+
+.ylbg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background-color: var(--main-color);
+    color: #203152;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.ylbg span {
+    font-size: 30px;
+}
+
+.ylbg strong {
+    font-size: 25px;
+}
+
+.blubg {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    background-color: #203152;
+    padding-block: 10px;
+    padding-inline: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blubg h5 {
+    color: var(--main-color);
+
+}
+
+.blubg ul li {
+    position: relative;
+}
+
+.blubg ul li::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+.blubg button {
+    color: #203152;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none;
+    padding-block: 7px;
+    padding-inline: 10px;
+    transition: all 0.5s;
+}
+
+.blubg button:hover {
+    box-shadow: 0 0 5px #ddd;
+    background-color: #203152;
+    color: #fff;
+}
+
+
+.firstsection {
+    height: 100%;
+    box-shadow: 0 0 5px #ddd;
+}
+.firstsection >h3{
+    color: var(--main-color);
+}
+.ListFirstSection li {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-block: 20px;
+    column-gap: 10px;
+}
+
+.ListFirstSection li .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.ListFirstSection li .content span {
+    color: #91a5bb;
+    margin-block: 3px;
+    font-size: 12px;
+}
+.ListFirstSection li .content button {
+    border: 2px solid #91a5bb;
+    color: #91a5bb;
+    background-color: transparent;
+    padding-inline:10px ;
+    padding-block: 5px;
+    transition: all 0.5s;
+
+}
+.ListFirstSection li .content button:hover {
+    background-color: #91a5bb;
+    color: #fff;
+}

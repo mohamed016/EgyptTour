@@ -1,0 +1,58 @@
+
+.comboCard{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.comboCard .stick{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background:linear-gradient(to top, #194e90 5%, transparent 100%)
+}
+
+.comboCard .overlay{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 100%;
+    background-color: #194e90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+.comboCard .overlay span{
+    color: var(--main-color);
+}
+.comboCard .overlay button{
+    background-color: var(--main-color);
+    color: #fff;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-block: 10px;
+}
+.comboCard .overlay button:hover{
+    box-shadow: 0 0 5px #ddd;
+    
+}
+.comboCard:hover .overlay{
+    top: 0;
+}
+.comboCard:hover .stick{
+    bottom: 100%;
+}
+.comboCard .overlay h2 span{
+    color: #fff;
+}

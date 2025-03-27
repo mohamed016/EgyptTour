@@ -1,0 +1,120 @@
+.firstadspartone {
+    background-color: #194e90;
+    border-radius: 8px;
+    text-align: center;
+    padding-block: 5px;
+}
+
+.firstadspartone img {
+    width: 60%;
+}
+
+.firstadspartone a {
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+
+.secondadspartone {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.secondadspartone img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+}
+
+.secondadspartone .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #194f9086;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.secondadspartone .content a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+
+.secondtadspartone {
+    position: relative;
+}
+
+.secondtadspartone .overLay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.226);
+
+}
+
+.secondtadspartone .content {
+    z-index: 111;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.secondtadspartone .content a {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding-inline: 5px;
+    padding-block: 10px;
+    color: #fff;
+}
+
+.secondtadspartone .content strong {
+    color: var(--main-color);
+}
+
+.secondtadspartone img {
+    height: 100%;
+    
+}
+
+.listTopHotel li {
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-block: 20px;
+    color: #194f909d;
+}
+
+.listTopHotelBox{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 10px;
+}
+.listTopHotel li:hover {
+
+    color: #194e90;
+}
+
+
+.swiper {
+    height: 100%;
+}

@@ -1,0 +1,90 @@
+.services {
+    background-color: #fff;
+    box-shadow: 0 0 5px #ddd;
+    padding: 10px;
+}
+
+.service {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 15px;
+    margin-block: 5px;
+}
+
+.service>span {
+    color: var(--main-color);
+}
+
+.service .textContent>h4 {
+    color: var(--main-color);
+}
+
+.trip {
+    position: relative;
+    overflow: hidden;
+}
+
+.trip>img {
+    aspect-ratio: 1/1;
+    transition: all 0.5s;
+}
+
+.trip .texcontent {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.trip .texcontent>p:first-child {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.trip .texcontent>h4 {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.trip .texcontent>button {
+    background-color: transparent;
+    padding-block: 5px;
+    padding-inline: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+
+.trip .texcontent>button:hover {
+    background-color: var(--main-color);
+}
+
+.trip:hover img {
+    transform: scale(1.25);
+}
+
+.flights li {
+    border-bottom: 1px solid #eeeff2;
+    padding-block-end: 10px;
+    transition: all 0.2s;
+    color: #6681a1;
+    cursor: pointer;
+}
+
+.flights li:hover {
+    color: rgba(0, 0, 255, 0.299);
+}
+
+.flights li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+.flights li a p {
+    margin: 0;
+}

@@ -1,0 +1,88 @@
+@media (max-width:768px) {
+
+    .imageBox img {
+        aspect-ratio: 1/1;
+    }
+}
+
+.imageBox .yelbg {
+    background-color: var(--main-color);
+    text-align: center;
+    padding-block: 10px;
+    padding-inline: 20px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.imageBox .blubg {
+    background-color: #194e90;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+
+}
+
+.imageBox .blubg h5 {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.imageBox .blubg p {
+    color: #fff;
+    max-width: 200px;
+}
+
+.imageBox .blubg button {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    padding-inline: 5px;
+    padding-block: 10px;
+}
+
+
+.destinationFamailyList li{
+    padding-block: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.destinationFamailyList li a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 10px;
+    color: #6681a1;
+}
+.destinationFamailyList li:hover> a span{
+    color: #194e90;
+}
+.citiesList li{
+    border-bottom: 1px solid #ddd;
+}
+
+.listTrips li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+.listTrips li button{
+    background-color: #194e90;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.listTrips li button:hover{
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px #ddd !important;
+} 

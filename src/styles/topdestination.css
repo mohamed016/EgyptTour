@@ -1,0 +1,138 @@
+.topdestination>h2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--main-color);
+
+}
+
+.topdestination>h2::after {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.topdestination>h2::before {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+
+}
+
+
+/* =====slider===== */
+.wiperSliderWraber .imagebox img {
+    transition: all 0.5s;
+    filter: opacity(0.7);
+    object-fit: cover;
+}
+
+.swiper {
+    /* position: relative; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+}
+
+.swiper-button-prev {
+    left: 0px;
+}
+
+.swiper-button-next {
+    right: 0px
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.wiperSliderWraber {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.wiperSliderWraber:hover img {
+    scale: 1.2;
+}
+
+
+.wiperSliderWraber .textContent {
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+    background-color: #20335492;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.stick {
+    position: absolute;
+    color: #fff;
+    bottom: 0%;
+    width: 100%;
+    padding-inline-start: 10px;
+    background: linear-gradient(to top, black, transparent);
+}
+.wiperSliderWraber:hover .stick{
+    bottom: -100%;
+}
+.stick span{
+   color: var(--main-color);
+}
+.wiperSliderWraber:hover .textContent {
+    right: 0;
+}
+
+.wiperSliderWraber .textContent h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.wiperSliderWraber .textContent span {
+    color: var(--main-color);
+}
+
+.wiperSliderWraber .textContent button {
+    background-color: var(--main-color);
+    color: #203354;
+    border: 0;
+    padding-inline: 10px;
+    padding-block: 5px;
+    transition: all 0.5s;
+}
+
+.overlay {
+    top: 0;
+    
+    position: absolute;
+    background-color: #203354;
+    width: 100%;
+    height: 100%;
+}
+
+.wiperSliderWraber .textContent button:hover {
+    color: #fff;
+}

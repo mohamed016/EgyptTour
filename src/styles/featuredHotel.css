@@ -1,0 +1,54 @@
+.featuredHotel>h2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--main-color);
+
+}
+
+.featuredHotel>h2::after {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+
+}
+
+.featuredHotel>h2::before {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+
+}
+.hotelBox{
+    overflow: hidden;
+}
+
+.hotelBox .overlay{
+    color: #fff;
+    background-color: #194f9088;;
+    top: 0;
+    left:100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+   
+}
+.hotelBox:hover .overlay{
+   left: 0;
+}
+.hotelBox:hover .stick{
+    bottom: 100%;
+}

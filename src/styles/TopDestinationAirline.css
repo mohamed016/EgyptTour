@@ -1,0 +1,45 @@
+ h2{
+    font-size: 20px;
+}
+.TopDestinations{
+    border-right: 2px solid #ddd;
+}
+.TopDestinations li,.TopAirline li{
+    margin-block: 5px;
+    position: relative;
+    padding-left: 8px;
+}
+.TopDestinations li a,.TopAirline li a{
+    color: #3d588e;
+}
+.TopDestinations li::before,.TopAirline li::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color:#203152;
+    left: 0;
+    margin-right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.TopDestinations li:hover::before,
+.TopAirline li:hover::before {
+    background-color: var(--main-color);
+}
+
+.TopDestinationAirlineBox{
+    background-color: aliceblue;
+    padding-block: 30px;
+  
+}
+
+@media (max-width: 1024px) {
+    .TopDestinations {
+        border-right: none;
+    }
+}

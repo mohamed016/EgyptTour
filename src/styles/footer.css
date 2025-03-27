@@ -1,0 +1,166 @@
+.footer{
+    background-color: #203054
+    ;
+    padding-block: 30px;
+}
+
+.FirstRow{
+    margin-block:5px ;
+    padding-bottom: 20px;
+}
+.FirstRow a:not(:last-child){
+    padding-inline:10px ;
+    padding-block: 5px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.FirstRow p{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--main-color);
+    margin: 0;
+}
+.FirstRow p span:first-child{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.FirstRow .browswLink{
+    padding-block:10px ;
+    padding-inline: 5px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    
+}
+.FirstRow .media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.FirstRow .media >span{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin-inline: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    background-color: #ddd;
+    border-radius: 50px;
+    color: #203054;
+    transition: all 0.5s;
+}
+.FirstRow .media >span:hover{
+    border-radius: 10px;
+}
+.FirstRow .media >span:hover a{
+    color: #fff;
+}
+.FirstRow .media >span a{
+    color: #203054;
+}
+.FirstRow .media >span:first-child:hover{
+    color: #fff;
+    background-color: blue;
+}
+.FirstRow .media >span:nth-child(2):hover{
+    background-color: rgb(255, 162, 0);
+}
+.FirstRow .media >span:nth-child(3):hover{
+    background-color:  black;
+    
+}
+.FirstRow .media >span:nth-child(4):hover{
+    background-color: red;
+}
+
+
+.SecondRow {
+    padding-block: 30px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+
+}
+.SecondRow .linksBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.SecondRow .linksBox a{
+    padding-inline:10px ;
+    padding-block: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: all 0.4s;
+}
+.SecondRow .linksBox a:first-child{
+    background-color: var(--main-color);
+    color: #203054;
+}
+.SecondRow .linksBox a:not(:first-child):hover{
+    background-color: var(--main-color);
+    color: #203054;
+}
+
+
+
+.downloadBox{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.downloadBox>h5{
+    font-size: 20px;
+    color: var(--main-color);
+}
+.downloadBox>span{
+    color: #ddd;
+}
+
+
+.imgLinkBox{
+    margin-top: 10px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.imgLinkBox a img{
+    filter: opacity(0.5);
+    transition: all 0.5s;
+}
+
+.imgLinkBox a:hover img{
+    filter: opacity(1);
+}
+
+
+.ThirdRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ThirdRow>div:first-child a{
+       color: #ddd;
+       margin-inline:5px ;
+}
+
+.paymentimage{
+    width: 30% !important;
+    width: fit-content;
+}
+.ThirdRow p:last-child{
+    color: #ddd;
+}

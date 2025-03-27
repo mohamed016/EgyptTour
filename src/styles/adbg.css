@@ -1,0 +1,161 @@
+.firstSection {
+    background-color: #55A7BD;
+    padding-block: 40px;
+    padding-inline: 30px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSection span {
+    font-size: 20px;
+    font-weight: 900;
+    padding-block: 15px;
+    color: #fff;
+}
+
+.firstSection h3 {
+    font-size: 18px;
+    color: var(--main-color);
+    padding-block: 15px;
+    border-block: 1px solid #ddd;
+}
+
+.firstSection a {
+    border: 3px solid #fff;
+    color: #fff;
+    padding-inline: 10px;
+    padding-block: 5px;
+    transition: all 0.5s;
+}
+
+.firstSection:hover {
+    background-color: #2cb3b7;
+}
+
+.firstSection a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.ladies {
+    position: relative;
+    overflow: hidden;
+}
+
+.ladies .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.485);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ladies .overlay p {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    line-height: 1;
+    transition: all 0.5s;
+}
+
+.ladies .overlay:hover p {
+    line-height: 1.25;
+}
+
+.offerLadies h3 {
+    padding-block: 8px;
+    border-bottom: 1px solid #7799BE;
+}
+
+
+.inputcontainer {
+    position: relative;
+
+}
+
+.inputcontainer span {
+    color: var(--main-color);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: fit-content;
+}
+
+
+
+
+.thirdsection {
+    position: relative;
+}
+
+.thirdsection .box {
+    width: 80%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.thirdsection .box a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    color: #fff;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-block:50px ;
+}
+.thirdsection .box a:hover{
+    background-color: #ffc10779;
+}
+.thirdsection .textContent {
+    position: relative;
+    color: #fff;
+}
+
+.thirdsection .textContent span {
+    display: block;
+}
+
+.thirdsection .textContent strong {
+    font-family: Vollkorn, serif;
+    font-size: 30px;
+}
+
+
+.thirdsection .textContent::after,
+.thirdsection .textContent::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+}
+
+.thirdsection .textContent::after {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    right: 0;
+    top: 0;
+}
+
+.thirdsection .textContent::before {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    left: 0;
+    bottom: 0;
+}
+
+.thirdsection:hover .textContent::before,
+.thirdsection:hover .textContent::after {
+    width: 50px;
+    height: 50px;
+}

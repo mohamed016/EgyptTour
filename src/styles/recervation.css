@@ -1,0 +1,190 @@
+.reservationBox {
+    width: 100%;
+    color: #fff;
+    z-index: 10;
+}
+
+.reservationBox>.container {
+    background-color: #323c49;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
+    color: var(--main-color);
+}
+
+p {
+    font-size: 14px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.searchbox {
+    margin-top: 35px;
+}
+
+.listSearch {
+    padding: 0;
+}
+
+.listSearch li span:first-child {
+    width: 70px;
+}
+
+.listSearch li div:nth-child(2) {
+    flex: 1;
+}
+
+select {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    outline: none;
+}
+
+select:focus {
+    border-color: var(--main-color);
+}
+
+.listSearch li span:last-child {
+    width: 50px;
+}
+
+.dropdownTraveller {
+    background-color: #fff;
+    z-index: 1;
+    color: #111;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ccc;
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-32%);
+}
+
+.dropdownTraveller::before {
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 20px solid transparent;
+    border-color: transparent transparent #fff transparent;
+}
+
+/* =====Hotelsearch===== */
+.dropdownHotel {
+    background-color: #fff;
+    z-index: 1;
+    color: #111;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ccc;
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 150%;
+    right: 0;
+}
+
+.dropdownHotel::before {
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 20px solid transparent;
+    border-color: transparent transparent #fff transparent;
+}
+
+.dropdownMenu>li:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownMenu>li:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.roomList {
+    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roomList li {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+}
+
+.selectionBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+@media (min-width: 1024px) {
+    .searchbox {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li {
+        width: fit-content;
+    }
+}
+
+
+.hotelFlightSearch {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 300px;
+    color: #111;
+    /* height: 400px; */
+    /* overflow-y: scroll; */
+
+}
+.hotelFlightSearch ul li{
+    margin-block: 5px;
+   
+}
+.room{
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.hotelFlightSearch::before {
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    transform: translateX(-20%);
+    border: 20px solid transparent;
+    border-color: transparent transparent #fff transparent;
+
+}

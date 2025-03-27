@@ -1,0 +1,74 @@
+.topdestination>h2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--main-color);
+
+}
+
+.topdestination>h2::after {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+
+}
+
+.topdestination>h2::before {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: clamp(50px, 20vw, 200px);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+
+}
+
+
+/* =====slider===== */
+.imagebox{
+    aspect-ratio: 1/1;
+}
+.wiperSliderWraber .imagebox img {
+    transition: all 0.5s;
+    filter: opacity(0.7);
+    object-fit: cover;
+}
+
+.swiper {
+    /* position: relative; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+}
+
+.swiper-button-prev {
+    left: 0px;
+}
+
+.swiper-button-next {
+    right: 0px
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.swiperSliderWrapper {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ddd;
+    padding: 10px;
+}
